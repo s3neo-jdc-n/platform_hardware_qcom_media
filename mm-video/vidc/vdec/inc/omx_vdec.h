@@ -866,7 +866,7 @@ private:
              OMX_U32 bytes, OMX_U8 *buffer);
         OMX_ERRORTYPE free_output_buffer(OMX_BUFFERHEADERTYPE *bufferHdr);
         void enable_native_buffers(bool enable) {m_native_buffers_enabled = enable;}
-        #define MAX_COUNT MAX_NUM_INPUT_OUTPUT_BUFFERS
+#define MAX_COUNT MAX_NUM_INPUT_OUTPUT_BUFFERS
         OMX_BUFFERHEADERTYPE  m_out_mem_ptr_client[MAX_COUNT];
     private:
         omx_vdec *omx;

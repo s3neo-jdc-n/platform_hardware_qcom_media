@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------------
-Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+Copyright (c) 2010-2013, 2015, The Linux Foundation. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -48,7 +48,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifdef _ANDROID_
 #include <binder/MemoryHeapBase.h>
 #ifdef _ANDROID_ICS_
-#include "QComOMXMetadata.h"
+#include <QComOMXMetadata.h>
 #endif
 #endif // _ANDROID_
 #include <pthread.h>
@@ -75,6 +75,7 @@ public:
 };
 
 #include <utils/Log.h>
+
 #endif // _ANDROID_
 
 #ifdef USE_ION
